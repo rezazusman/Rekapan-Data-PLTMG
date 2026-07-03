@@ -1,0 +1,15 @@
+{
+    "timestamp": "2026-07-04 02:54:49",
+    "data": {
+        "UNIT1_MW": 4.35,
+        "UNIT1_MVAR": -0.49,
+        "UNIT2_MW": 4.42,
+        "UNIT2_MVAR": -0.36,
+        "UNIT3_MW": 4.32,
+        "UNIT3_MVAR": -0.59,
+        "UNIT4_MW": 4.46,
+        "UNIT4_MVAR": -0.7,
+        "UNIT5_MW": "",
+        "UNIT5_MVAR": ""
+    }
+}
