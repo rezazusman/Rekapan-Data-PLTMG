@@ -1,22 +1,21 @@
 import subprocess
-import sys
 import os
+import sys
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE = os.path.dirname(os.path.abspath(__file__))
 PYTHON = sys.executable
 
-print("="*50)
-print("PLTMG AI SERVER")
-print("="*50)
+programs = [
+    "main.py",
+    "history_writer.py",
+    "watchdog.py"
+]
 
-subprocess.Popen(
-    [PYTHON, os.path.join(BASE_DIR, "main.py")],
-    creationflags=subprocess.CREATE_NEW_CONSOLE
-)
+for p in programs:
 
-subprocess.Popen(
-    [PYTHON, os.path.join(BASE_DIR, "history_writer.py")],
-    creationflags=subprocess.CREATE_NEW_CONSOLE
-)
+    subprocess.Popen(
+        [PYTHON, os.path.join(BASE, p)],
+        creationflags=subprocess.CREATE_NEW_CONSOLE
+    )
 
-print("Server berhasil dijalankan.")
+print("PLTMG AI Server Started")
